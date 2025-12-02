@@ -1,16 +1,90 @@
-# React + Vite
+HEALTHDESK – Frontend Application (React + Vite)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The HealthDesk project is a fully responsive frontend application built using React and Vite. It represents a modern health and wellness website with structured sections, reusable components, organized assets, and a clean UI. The project focuses on performance, modular component architecture, and maintainable code.
 
-Currently, two official plugins are available:
+Features
+1. Responsive Hero Banner
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+A clean introductory section with a heading, description, a call-to-action button, and a supporting banner image.
 
-## React Compiler
+2. Categories Section
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Displays five health-related categories using individual cards. Each card includes an icon, title, description, and a button.
 
-## Expanding the ESLint configuration
+3. Best Sellers
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+A section that showcases the top health supplement products. Includes images, product names, ratings, and reusable card components.
+
+4. Commitment / Feature Section
+
+Contains three informational blocks that explain natural components, research-backed formulations, and eco-conscious manufacturing. The layout alternates between image-left and image-right for visual clarity.
+
+5. Customer Testimonials
+
+Displays verified customer reviews with product images, rating, review content, and reviewer details.
+
+6. Footer and Social Media Section
+
+A simple footer with branding and social media icons.
+
+Folder Structure Overview
+src/
+ ├─ assets/
+ │   ├─ Banner/
+ │   ├─ Carousel/
+ │   ├─ Commitment/
+ │   ├─ products/
+ │   └─ Review/
+ ├─ components/
+ │   ├─ Header/
+ │   │   └─ Navbar/
+ │   ├─ Main/
+ │   │   ├─ Banner/
+ │   │   ├─ Carousel/
+ │   │   ├─ BestSeller/
+ │   │   ├─ Feature/
+ │   │   ├─ Review/
+ │   │   └─ Social/
+ │   └─ Footer/
+ ├─ App.jsx
+ └─ main.jsx
+
+Key Highlights
+
+Component-based architecture for better reusability. All images stored locally and imported from the assets directory. Custom CSS using Flexbox and Grid for layout. Clean and readable JSX. Consistent naming conventions. Section containers used for alignment and spacing. Mapping used to dynamically render categories, products, and reviews.
+
+Tech Stack
+
+React
+Vite
+JavaScript (ES6)
+CSS
+Bootstrap
+ESLint
+
+Getting Started
+
+Clone the repository:
+
+git clone https://github.com/Nirnay-Gattoji/HEALTHDESK.git
+cd HEALTHDESK
+
+
+Install project dependencies:
+
+npm install
+
+
+Run the project in development mode:
+
+npm run dev
+
+
+Build the project for production:
+
+npm run build
+
+
+Preview the production build:
+
+npm run preview
