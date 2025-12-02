@@ -1,0 +1,60 @@
+/* ======================================= */
+/* 1. CONTAINER & LAYOUT */
+/* ======================================= */
+.contact-section-container {
+    /* 🚨 Changed: customer-info-bar-container -> contact-section-container */
+    background-color: #efefef; 
+    padding: 80px;
+    max-width: 100%;
+    
+    display: flex;
+    justify-content: space-evenly;
+    gap: 30px;
+    flex-wrap: wrap; 
+}
+
+.contact-column {
+    /* 🚨 Changed: info-column -> contact-column */
+    flex-basis: calc(33.333% - 20px); 
+    min-width: 250px;
+}
+
+/* ======================================= */
+/* 2. TEXT AND BUTTON STYLES */
+/* ======================================= */
+.contact-heading {
+    /* 🚨 Changed: info-heading -> contact-heading */
+    font-size: 1.8em;
+    font-weight: 600;
+    color: #111;
+    margin-top: 50px;
+    margin-bottom: 15px;
+}
+
+.contact-text {
+    /* 🚨 Changed: info-text -> contact-text */
+    font-size: 1.2em;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.contact-phone-number {
+    /* 🚨 Changed: info-phone-number -> contact-phone-number */
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #111;
+    margin: 0;
+}
+
+.contact-button {
+    /* 🚨 Changed: info-button -> contact-button */
+    background-color: transparent;
+    color: #007bff;
+    border: 1px solid #007bff;
+    padding: 10px 50px;
+    font-size: 1em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}

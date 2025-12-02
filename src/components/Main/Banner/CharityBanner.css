@@ -1,0 +1,21 @@
+.charity-banner-container {
+    max-width: 1400px; /* Adjust to match your page's overall max width */
+    margin: 60px auto; /* Vertical spacing and centering */
+    overflow: hidden; /* Ensures image doesn't overflow */
+    border-radius: 10px; /* Optional: Soften corners */
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1); /* Optional: Subtle shadow */
+}
+
+.charity-banner-image {
+    width: 100%; /* Make the image fill the container */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove extra space below image */
+}
+
+/* Responsive adjustments if needed */
+@media (max-width: 768px) {
+    .charity-banner-container {
+        margin: 40px 15px; /* Adjust margins for smaller screens */
+        border-radius: 5px;
+    }
+}

@@ -1,0 +1,26 @@
+/* Centers all sections across the page */
+.section-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 15px;
+}
+
+/* Center all text sections properly */
+.section-title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Make card rows align evenly */
+.cards-row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+/* Keeps everything aligned in the center of the page */
+.section-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}

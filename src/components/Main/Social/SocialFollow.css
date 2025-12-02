@@ -1,0 +1,72 @@
+/* ======================================= */
+/* 1. CONTAINER & LAYOUT */
+/* ======================================= */
+.social-follow-container {
+    padding: 30px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers all content horizontally */
+    text-align: center;
+}
+
+/* --- Logo --- */
+.social-logo-wrapper {
+    margin-bottom: 30px;
+}
+
+.social-logo {
+    width: 200px; /* Adjust size as needed */
+    height: auto;
+}
+
+/* --- Follow Us Button --- */
+.follow-us-button {
+    background-color: transparent;
+    color: #007bff; /* Blue border/text */
+    border: 1px solid #007bff; 
+    border-radius: 5px;
+    padding: 10px 40px;
+    font-size: 1em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-bottom: 30px;
+}
+
+.follow-us-button:hover {
+    background-color: #007bff;
+    color: #ffffff;
+}
+
+/* --- Social Icons --- */
+.social-icons-wrapper {
+    display: flex;
+    gap: 15px; /* Spacing between icons */
+}
+
+.social-icon {
+    width: 35px; /* Size of the social icons */
+    height: 35px;
+    transition: transform 0.2s;
+    /* Apply a filter if your icons are black/white and you want them blue */
+    /* filter: invert(40%) sepia(90%) saturate(2000%) hue-rotate(200deg) brightness(90%); */
+}
+
+.social-icons-wrapper a:hover .social-icon {
+    transform: scale(1.1);
+}
+
+/* ======================================= */
+/* 2. RESPONSIVE ADJUSTMENTS */
+/* ======================================= */
+@media (max-width: 600px) {
+    .social-follow-container {
+        padding: 50px 15px;
+    }
+    .social-logo {
+        width: 150px;
+    }
+}

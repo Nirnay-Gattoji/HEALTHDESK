@@ -1,0 +1,21 @@
+/* --- Outer Container for Vertical Spacing --- */
+.heading-container {
+    /* Add substantial vertical padding to separate it from other sections */
+    padding: 20px 0px; 
+    background-color: #ffffff; /* A slight off-white background can help separation */
+}
+
+/* --- Main Heading Styles --- */
+.main-heading {
+    /* 1. Centering and Line Wrapping: */
+    max-width: 900px; /* Set a maximum width to force the text to wrap */
+    margin: 0 auto; /* Centers the H1 block horizontally */
+    text-align: center; /* Centers the text inside the H1 block */
+    
+    /* 2. Styling: */
+    font-size: 2.8em; /* Large size */
+    font-weight: 700; /* Extra bold style */
+    color: black; /* Dark text */
+    
+}
+

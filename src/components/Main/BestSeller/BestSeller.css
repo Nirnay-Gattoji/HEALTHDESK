@@ -1,0 +1,164 @@
+/* ======================================= */
+/* 1. BEST SELLERS SECTION LAYOUT (Parent) */
+/* ======================================= */
+
+.best-sellers-section-container {
+    padding: 60px 30px; /* Vertical and horizontal padding */
+    max-width: 1400px;
+    margin: 0 auto; /* Center the content */
+}
+
+/* --- Title and Subtitle --- */
+.best-sellers-title {
+    font-size: 2.5em;
+    font-weight: 700;
+    color: #111;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.best-sellers-subtitle {
+    font-size: 1.3em;
+    color: black;
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+
+/* --- Filter/Tab Bar --- */
+.best-sellers-filters {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-left: 20px;
+    margin-bottom: 40px;
+    gap: 0;
+}
+
+.filter-tab {
+    font-size: 1.15em;
+    font-weight: 700;
+    color: black;
+    
+    padding-right: 20px;
+    cursor: pointer;
+    
+    /* Create the divider effect */
+    border-right: 2px solid #262525;
+}
+
+.filter-tab:last-child {
+    border-right: none; /* No divider after the last item */
+    padding-right: 0;
+}
+
+
+/* --- Product List Wrapper (Flexbox for Side-by-Side) --- */
+.product-list-wrapper {
+    display: flex; 
+    justify-content: space-between; /* Spreads cards out */
+    flex-wrap: wrap; /* Allows wrapping */
+    gap: 20px; /* Space between cards and rows */
+    padding: 20px 0;
+}
+
+/* ======================================= */
+/* 2. INDIVIDUAL PRODUCT CARD STYLES */
+/* ======================================= */
+
+.product-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    padding: 20px;
+    text-align: center;
+    /* Flex property to manage card width within the wrapper: 
+       Can grow, cannot shrink smaller than 200px, preferred width is 200px. */
+    flex: 1 1 200px; 
+    max-width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* --- Image Area --- */
+.product-image-area {
+    width: 100%;
+    height: 180px; 
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f7f7f7; 
+    border-radius: 4px;
+}
+
+.product-image {
+    max-width: 90%;
+    max-height: 100%;
+    object-fit: contain; 
+}
+
+/* --- Product Name --- */
+.product-name {
+    font-size: 1.1em;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* --- Star Rating --- */
+.product-rating {
+    margin-bottom: 15px;
+    color: #ffc107; /* Yellow/Amber color for stars */
+}
+
+.star-empty {
+    color: #ccc; 
+}
+
+/* --- Shop Now Button --- */
+.product-button {
+    background-color: transparent;
+    color: #007bff; 
+    border: 1px solid #007bff; 
+    border-radius: 5px;
+    padding: 8px 20px;
+    font-size: 0.9em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    width: 90%; 
+}
+
+.product-button:hover {
+    background-color: #007bff;
+    color: #ffffff;
+}
+
+/* ======================================= */
+/* 3. RESPONSIVE ADJUSTMENTS */
+/* ======================================= */
+
+@media (max-width: 1200px) {
+    .product-list-wrapper {
+        justify-content: center; /* Center cards when they start wrapping */
+    }
+}
+@media (max-width: 768px) {
+    .best-sellers-section-container {
+        padding: 40px 15px; /* Less padding on smaller screens */
+    }
+    .best-sellers-filters {
+        justify-content: space-around;
+        font-size: 0.9em;
+    }
+    .filter-tab {
+        border-right: none;
+        padding: 5px 10px;
+    }
+}

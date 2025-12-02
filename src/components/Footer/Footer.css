@@ -1,0 +1,191 @@
+/* ======================================= */
+/* 1. FOOTER CONTAINER & MAIN LAYOUT */
+/* ======================================= */
+.footer-container {
+    background-color: #f7f7f7; /* Light gray background for the bottom sections */
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+.footer-content-wrapper {
+    background-color: #ffffff; /* White background for the top section (contact/products) */
+    display: flex;
+    justify-content: space-between;
+    max-width: 100% ;
+    margin: 0 auto;
+    padding: 40px 30px;
+    border-bottom: 1px solid #ccc;
+}
+
+.footer-column {
+    /* Base for contact column and individual product columns */
+    padding: 0 10px;
+}
+
+/* --- Contact/Address Column --- */
+.footer-contact {
+    flex-basis: 25%;
+    min-width: 200px;
+    border-right: 2px solid #e0e0e0;
+    height: 100%        ;
+}
+
+.footer-logo {
+    width: 130px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.footer-address, .footer-contact-detail {
+    font-size: 0.9em;
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 5px;
+}
+
+/* --- Product Links Wrapper (The 5 columns) --- */
+.footer-products-wrapper {
+    flex-basis: 75%;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.footer-heading-products {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    width: 100%;
+}
+
+.footer-product-list {
+    flex-basis: calc(100% / 5); /* Ensures 5 equal columns */
+    min-width: 100px;
+    padding-top: 30px; /* Space for the heading */
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 5px;
+}
+
+.footer-links a {
+    color: #555;
+    text-decoration: none;
+    font-size: 0.9em;
+    transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+    color: #007bff;
+}
+
+/* ======================================= */
+/* 3. DISCLAIMER & PAYMENT (Light Gray Section) */
+/* ======================================= */
+.footer-disclaimer-wrapper {
+    background-color: #e8e8e8; /* Slightly darker gray for distinction */
+    max-width: 100% ;
+    margin: 0 auto;
+    padding: 30px 30px;
+    text-align: center;
+}
+
+.footer-disclaimer-text {
+    font-size: 0.8em;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.footer-payment-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.payment-icon {
+    height: 25px;
+    width: auto;
+    object-fit: contain;
+}
+
+/* ======================================= */
+/* 4. COPYRIGHT BAR (Bottom Strip) */
+/* ======================================= */
+.footer-copyright-bar {
+    background-color: #e8e8e8; /* Slightly darker strip */
+    text-align: center;
+    padding: 15px 30px;
+    font-size: 0.8em;
+    color: #555;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-policies a {
+    color: #555;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.footer-policies a:hover {
+    color: #007bff;
+}
+
+
+/* ======================================= */
+/* 5. RESPONSIVE LAYOUT */
+/* ======================================= */
+@media (max-width: 1050px) {
+    .footer-products-wrapper {
+        /* On smaller desktop screens, condense to 3 product columns */
+        justify-content: space-around;
+    }
+    .footer-product-list {
+        flex-basis: 30%; 
+        padding-top: 5px;
+    }
+    .footer-heading-products {
+        position: static;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .footer-contact {
+        flex-basis: 100%;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .footer-logo {
+        margin: 0 auto 20px auto;
+    }
+}
+
+@media (max-width: 650px) {
+    .footer-content-wrapper {
+        flex-direction: column;
+        padding: 20px 15px;
+    }
+    .footer-products-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-product-list {
+        flex-basis: 100%;
+        text-align: center;
+        padding: 5px 0;
+    }
+    .footer-copyright-bar {
+        flex-direction: column;
+    }
+    .footer-policies {
+        margin-top: 10px;
+    }
+}

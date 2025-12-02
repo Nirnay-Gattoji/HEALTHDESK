@@ -1,0 +1,143 @@
+/* ======================================= */
+/* 1. SECTION HEADER STYLES */
+/* ======================================= */
+.commitment-section-container {
+    padding: 80px 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.section-main-title {
+    font-size: 1.8em;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.section-sub-title {
+    font-size: 2.5em;
+    font-weight: 800;
+    color: #111;
+    margin-bottom: 20px;
+}
+
+.section-intro-text {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 60px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+/* ======================================= */
+/* 2. COMMITMENT ITEM LAYOUT (Alternating) */
+/* ======================================= */
+.commitment-item {
+    display: flex;
+    align-items: center; /* Vertically align content */
+    gap: 50px; /* Space between image and text */
+    margin-bottom: 80px;
+    text-align: left; /* Reset text alignment for inner content */
+}
+
+/* Forces image to be on the right for items where alignLeft is false */
+.image-right {
+    flex-direction: row-reverse; 
+}
+
+/* --- Image Styling --- */
+.commitment-image-wrapper {
+    flex-shrink: 0; /* Prevents image from shrinking */
+    width: 45%; /* Image takes up slightly less than half the space */
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.commitment-image {
+    width: 100%;
+    height: 300px;
+    display: block;
+    object-fit: cover;
+}
+
+/* --- Text Content Styling --- */
+.commitment-text-content {
+    flex-grow: 1; /* Text content takes up remaining space */
+    width: 55%; 
+    padding: 20px 0;
+}
+
+.commitment-title {
+    font-size: 1.8em;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.commitment-subtitle {
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #555;
+    margin-bottom: 20px;
+    letter-spacing: 0.5px;
+}
+
+.commitment-description {
+    font-size: 1em;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.commitment-learn-more {
+    background-color: transparent;
+    color: #007bff;
+    border: 2px solid #007bff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-size: 1em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.commitment-learn-more:hover {
+    background-color: #007bff;
+    color: #ffffff;
+}
+
+
+/* ======================================= */
+/* 3. RESPONSIVE ADJUSTMENTS */
+/* ======================================= */
+@media (max-width: 950px) {
+    .commitment-item {
+        /* Stack the image and text vertically */
+        flex-direction: column !important; 
+        gap: 30px;
+        margin-bottom: 60px;
+    }
+    
+    .commitment-image-wrapper,
+    .commitment-text-content {
+        width: 100%; /* Full width when stacked */
+        text-align: center;
+    }
+
+    .commitment-learn-more {
+        width: 100%;
+        max-width: 300px; /* Limit button size */
+    }
+}
+
+@media (max-width: 600px) {
+    .section-sub-title {
+        font-size: 2em;
+    }
+    .commitment-section-container {
+        padding: 50px 15px;
+    }
+}

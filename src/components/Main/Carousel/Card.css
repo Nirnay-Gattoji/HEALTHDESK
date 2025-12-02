@@ -1,0 +1,75 @@
+.category-card {
+  background: linear-gradient(135deg, #e9f7ff, #f4fbff);
+  border-radius: 20px;
+  padding: 30px 20px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  
+  /* Make all cards same height */
+  height: 100%; 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+  /* Smooth hover */
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.category-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
+}
+
+/* Icon wrapper */
+.card-icon-wrapper {
+  width: 80px;
+  height: 80px;
+  background: #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 15px auto;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Icon */
+.card-icon {
+  width: 45px;
+  height: 45px;
+  object-fit: contain;
+}
+
+/* Title */
+.card-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #1d1d1d;
+}
+
+/* Description */
+.card-description {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 25px;
+  line-height: 1.5;
+  min-height: 60px; /* Ensures equal spacing for all card descriptions */
+}
+
+/* Button */
+.card-button {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 25px;
+  background: linear-gradient(135deg, #478bff, #5069ff);
+  color: white;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.25s ease;
+}
+
+.card-button:hover {
+  background: linear-gradient(135deg, #3b74e0, #4357e0);
+}

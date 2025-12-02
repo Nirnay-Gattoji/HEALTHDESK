@@ -1,0 +1,28 @@
+/* Outer Container - centers the whole section */
+.category-section-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 15px;
+}
+
+/* Force all 5 cards to stay in ONE row */
+.category-cards-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 25px;
+  flex-wrap: nowrap;  /* ❗THIS forces a single line */
+  width: 100%;
+}
+
+/* Each card takes exactly 20% width */
+.category-cards-wrapper > * {
+  flex: 0 0 calc(20% - 20px);  /* 5 equal columns */
+  max-width: calc(20% - 20px);
+  box-sizing: border-box;
+}
+
+/* Disable scroll behavior */
+.category-cards-wrapper {
+  overflow: hidden !important;
+}

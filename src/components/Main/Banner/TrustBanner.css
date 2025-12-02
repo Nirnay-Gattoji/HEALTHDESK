@@ -1,0 +1,14 @@
+.trust-banner-container {
+    max-width: 1400px; /* Match your page's overall max width */
+    margin-top: 80px; /* Vertical spacing and centering */
+    margin-left: 65px;
+    margin-right: 65px;
+    overflow: hidden; 
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05); /* Optional: Subtle shadow */
+}
+
+.trust-banner-image {
+    width: 100%; /* Ensure the image fills the width */
+    height: auto; /* Maintain aspect ratio */
+    display: block; 
+}

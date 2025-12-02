@@ -1,0 +1,56 @@
+/* --- Main Navigation Container --- */
+.navbar-main {
+    /* Set the background to white */
+    background-color: #ffffff; 
+    
+    /* Flexbox setup to align children (logo and links) horizontally */
+    display: flex;
+    justify-content: space-between; /* Pushes the logo left and links right */
+    align-items: center; /* Vertically centers items */
+    
+    padding: 15px 30px; /* Vertical and horizontal padding */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Subtle bottom shadow */
+    height: 100px;
+    width: 100%;
+    position: sticky; /* Keeps the navbar at the top */
+    top: 0;
+    z-index: 100;
+}
+
+/* --- 1. Left Component: Logo --- */
+.navbar-logo img {
+    width: 100px; /* Set a fixed width for the logo image */
+    height: auto; /* Maintain aspect ratio */
+    margin-left: 50px;
+}
+
+/* --- 2. Right Component: Links and Icon Container --- */
+.navbar-links {
+    display: flex;
+    align-items: center; /* Ensures the cart icon aligns with links */
+    gap: 40px; /* Spacing between the link list and the cart icon */
+}
+
+/* --- Navigation List --- */
+.navbar-links ul {
+    list-style: none; /* Remove bullet points */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 50px; /* Spacing between individual links */
+}
+
+/* --- Anchor Tags (Links) --- */
+.navbar-links a {
+    text-decoration: none;
+    color: black; /* Neutral dark gray link color */
+    font-size: 20px;
+    font-weight: 400;
+    transition: color 0.3s ease;
+}
+/* --- Cart Icon --- */
+.navbar-cart a {
+    font-size: 22px; /* Make the icon a bit larger */
+    color: black; /* Icon color */
+    line-height: 1; /* Ensures vertical centering */
+}
